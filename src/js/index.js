@@ -1,5 +1,5 @@
-import store from '../js/store/index';
-import { addArticle } from '../js/actions/index';
+import store from './store/reduxstore';
+import { addArticle } from './actions/action';
 
 window.store = store;
 window.addArticle = addArticle;
