@@ -7,19 +7,15 @@ const mapStateToProps = (state) =>{
     };
 };
 
-const ConnectedList = ({articles}) => {
-    return (
+const ConnectedList = ({articles}) => (
     <ul>
         {
             articles.map(item => {
-                <li key={item.id}>
-                    {item.title}
-                </li>
+                <li key={item.id}>{item.title}</li>
             })
         }
     </ul>
-    )
-}
+)
 
 const List = connect(mapStateToProps)(ConnectedList);
 
